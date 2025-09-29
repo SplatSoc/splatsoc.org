@@ -2,5 +2,36 @@
 layout: page
 title: 'Events Calendar'
 ---
+<style>
+@media (max-width: 550px) {
+   .big-container {
+       display: none;
+   }
+}
+@media (min-width: 550px) {
+   .small-container {
+       display: none;
+   }
+}
+/* Responsive iFrame */
+.responsive-iframe-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+}
+.responsive-iframe-container iframe,   
+.responsive-iframe-container object,  
+.responsive-iframe-container embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+</style>
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&showPrint=0&src=c3BsYXRvb25AeW9ya3N1Lm9yZw&src=Y180NjQ2NTU1NGRmMWJjOGI1NmJjYzc5YWUyMTZkZjljYTYyMGQ1Y2UwZjU5NGQyMWRkNTE4ZjA5MmE3ZDdlMjMyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043&color=%230b8043&color=%230b8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<div class="responsive-iframe-container small-container">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&showPrint=0&mode=AGENDA&src=c3BsYXRvb25AeW9ya3N1Lm9yZw&src=Y180NjQ2NTU1NGRmMWJjOGI1NmJjYzc5YWUyMTZkZjljYTYyMGQ1Y2UwZjU5NGQyMWRkNTE4ZjA5MmE3ZDdlMjMyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043&color=%230b8043&color=%230b8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
